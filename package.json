@@ -1,0 +1,21 @@
+{
+  "name": "user-access-control",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon server.js"
+  },
+  "author": "Sam Mansour",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.3.1",
+    "hbs": "^4.0.1",
+    "mongoose": "^5.4.9",
+    "nodemon": "^1.18.9",
+    "passport": "^0.4.0"
+  }
+}

@@ -1,0 +1,18 @@
+{{#if users}}
+
+<div class="card m-5 p-3 bg-dark text-light">
+    <div class="card-body">
+        <h4 class="card-title text-warning">{{users.role}}</h4>
+        <hr class="bg-info">
+        <p class="card-title"><b>ID:</b> {{users._id}}</p>
+        <p class="card-title"><b>Name:</b> {{users.name}}</p>
+        <p class="card-title"><b>email:</b> {{users.email}}</p>
+        <p class="card-title"><b>City:</b> {{users.address.city}}</p>
+        <p class="card-title"><b>Zip: </b>{{users.address.zip}}</p>
+        <p class="card-title"><b>Street:</b> {{users.address.street}}</p>
+
+        <p class="card-title"><b>Country:</b> {{users.address.country}}</p>
+    </div>
+</div>
+
+{{/if}}

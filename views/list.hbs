@@ -1,0 +1,22 @@
+<table class="table">
+    <thead class="thead-light">
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">role</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each users}}
+        <tr>
+            <td>{{name}}</td>
+            <td>{{email}}</td>
+            <td>{{role}}</td>
+            <td> <a href="/user/delete/{{_id}}"><i class="fas fa-trash text-danger"></i></a></td>
+            <td> <a href="/user/info/{{_id}}"><i class="fas fa-info"></i></a></td>
+
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
