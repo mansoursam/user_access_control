@@ -16,7 +16,7 @@ mongoose
 //setup express session
 app.use(
   session({
-    secret: "sam",
+    secret: "your secret",
     cookie: {
       maxAge: 1000 * 60 * 60 * 24 * 7
     },
@@ -28,7 +28,9 @@ app.use(
 app.set("view engine", "hbs");
 app.use(express.static(__dirname + "/public"));
 app.use(express.static(__dirname + "/views"));
+//setup body-parser
 app.use(bodyParser.urlencoded({ extended: false }));
+//setup express-validator
 app.use(expressValidator());
 app.use("/", require("./routes/index"));
 app.listen(PORT, () => {
